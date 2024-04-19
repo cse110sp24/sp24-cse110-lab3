@@ -1,0 +1,228 @@
+/* :root {
+    --primary-color: #3498db;
+  }
+
+.heading {
+    color: #894332;
+}
+
+.topic {
+    color: rgb(39, 39, 123);
+    background-color: var(--primary-color, #2980b9);
+    height: 40px;
+    position: static;
+}
+
+.date {
+    color: hsl(0, 100%, 50%);
+    background-color: color(display-p3 1 0.5 0);
+    width: auto;
+    max-width: 150px;
+    position: relative;
+}
+
+.toc {
+    background-color: gray;
+    color: color-mix(in lch, plum, pink);
+    margin: 10px 2rem;
+    text-align: center;
+    text-decoration: underline;
+    width: 250px;
+}
+
+body {
+    margin-top: 25px;
+    margin-bottom: auto;
+    margin-left: 5em;
+    margin-right: 5em;
+    background-color: lightblue;
+    border-width: 1px; 
+    border-style: dashed; 
+    border-color: #ff0000; 
+    border-radius: 10px;
+    padding-top: 25px;
+    padding-bottom: auto;
+    padding-left: 5em;
+    padding-right: 5em;
+    max-width: 450px;
+}
+
+.nav {
+    margin: 10px 10px 10px 10px;
+}
+
+.subheading {
+    padding: 10px 20px 10px 20px;
+}
+
+.business div {
+    display: inline-block;
+    width: 48%; 
+    vertical-align: top;
+}
+.business div:last-child {
+    margin-right: 0; 
+}
+
+header {
+    display: grid;
+}
+
+#charts {
+    max-height: 450px;
+}
+
+button:hover {
+    color: green;
+}
+
+a:active {
+    color: orange;
+}
+ */
+
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+
+body {
+    font-family: "Open Sans", sans-serif;    /* display: flex;
+    justify-content: center;
+    align-items: center; */
+    
+    
+    /* max-width: 800px; */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+}
+
+.content {
+    margin-top: 5em;
+    margin-bottom: 5em;
+    margin-left: 10%;
+    margin-right: 10%;
+    background-color: lightblue;
+    border-width: 1px; 
+    border-style: dashed; 
+    border-color: #ff0000; 
+    border-radius: 10px;
+    padding-top: 25px;
+    padding-bottom: 0px;
+    padding-left: 5em;
+    padding-right: 5em;
+    position: relative;
+}
+
+header > h1 {
+    background-color: hsl(0, 100%, 50%);;
+    color: color-mix(in lch, plum, pink);
+    margin: 10px 2rem;
+    text-align: center;
+    text-decoration: underline;
+    position: static;
+    /* width: 50%; */
+}
+
+a:active {
+    color: rgb(208, 37, 186);
+}
+
+a {
+    color: color(display-p3 1 0.5 0);
+}
+
+:root {
+    --primary-color: #3498db;
+}
+
+.toc {
+    background-color: var(--primary-color, #2980b9);
+}
+
+img {
+    max-height: 500px;
+    margin: 25px auto;
+    padding: 5px 5px;
+}
+
+button:hover {
+    color: green;
+}
+
+.business div {
+    display: inline-block;
+    width: 48%; 
+    vertical-align: top;
+}
+.business div:last-child {
+    margin-right: 0; 
+}
+
+
+form {
+    display: none;
+}
+
+#videoaudio {
+    display: grid;
+  grid-template-columns: repeat(3, 1fr); /* Three equal columns */
+  grid-gap: 10px; /* Gap between grid items */
+  margin: 20px auto; /* Center the grid on the page */
+
+
+}
+
+.griditem {
+    text-align: center; /* Center text inside items */
+}
+
+
+* {
+    margin-bottom: 0;
+}
+
+[class~="toc"] {
+    text-decoration: overline;
+}
+
+h1, h2, h3 {
+    color: darkgreen;
+}
+
+p em {
+    color: blue;
+}
+
+section ~ div {
+    background-color: aquamarine;
+}
+
+div + div {
+    color: orangered;
+}
+
+section.business {
+    background-color: antiquewhite;
+}
+
+h3:has(+ p) {
+    background-color: yellow;
+}
+
+ol {
+    background-color: purple;
+    & li {
+        color: greenyellow;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    body {
+        margin-left: 5%;
+        margin-right: 5%;
+    }
+    #videoaudio {
+        display: block;
+    }
+    
+}
